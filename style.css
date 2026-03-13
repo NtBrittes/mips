@@ -1,0 +1,35 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-color: #528913;
+}
+
+/* Container que centraliza tudo */
+.container {
+    display: flex; /* Coloca os itens lado a lado */ 
+    justify-content: center; /* Centraliza os itens na horizontal*/
+    align-items: center; /* Centraliza na vertical   */
+    height: 100vh; /*Faz o container ler a altura da tela*/
+    gap: 20px; /* Espaço entre os cards */
+}
+
+/*Estiliza o card*/
+.card {
+    background: rgb(140, 228, 218);
+    width: 250px;       /* Largura fixa do card */
+    height: 300px;      /* ALTURA FIXA: Todos os cards terão o mesmo tamanho */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(227, 223, 223, 0.9);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;        /* Ocupa a largura do card */
+    height: 150px;      /* ALTURA FIXA: Todas as fotos ficam iguais */
+    object-fit: cover;  /* O SEGREDO: Corta a foto para caber sem distorcer */
+    border-radius: 5px;
+}
